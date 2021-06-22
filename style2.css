@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  white;
+  }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  input[type=submit] {
+    background-color: #56ca9f;
+    color: white;
+  }
+
+  #btnIngresar1{
+    background-color: #56ca9f;
+    color: white;
+  }
+
+  .container {
+    padding: 16px;
+    background-color: white;
+    }
+
+  .si {
+   color: green; 
+  }
+
+  .no {
+    color: red;
+  }
+
+  .select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+}
+
+#seleccionIngresar{
+  text-align: center;
+}
+
+#btnSeccionIngresar {
+  color: blue;  
+  list-style: none;
+}
+
+
+
+

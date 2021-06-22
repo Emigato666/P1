@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Contra</title>
+</head>
+
+<body>
+    <div id="seleccionRegistro">
+         <label for="slcTipo" required>Tipo de usuario:</label>
+            <select class="select" id="slcTipo" name="select">
+                <option value="Docente">Docente</option>
+                <option value="Alumno">Alumno</option>
+                </select>
+
+                <select class="select" id="selectDos" style="display:none;">
+                    <option value="">Seleccionar su docente...</option>
+                    <option value="prof1">Profesor 1</option>
+                    <option value="prof2">Profesor 2</option>
+                    <option value="prof3">Profesor 3</option>
+                    <option value="prof4">Profesor 4</option>
+                </select>
+
+
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" id="txtNombre"><br>
+            <label for="nombreu">Nombre de Usuario</label>
+            <input type="text" id="nombreu" name="nombreu">
+
+            <label for="cts">Contraseña</label>
+            <input id="cts" name="cts" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{4,}"
+                title="Debe contener minimo 1 numero, 1 letra mayuzcula, 1 letra minuzcula y minimo de 4 caracteres">
+
+            <input type="submit" id= "btnregistro" value="Registrarse">
+
+        </div>
+
+
+    <div id="msj">
+        <h3>Contraseña debe cumplir con las siguientes condiciones:</h3>
+        <p id="letra" class= "no">1 Minúscula</p>
+        <p id="may" class= "no">1 Mayúscula </p>
+        <p id="num" class= "no">1 Número </p>
+        <p id="largo" class= "no">Mínimo 4 Caracteres</p>
+    </div>
+
+    <hr>
+    <div id= "seleccionIngresar" >
+        <p id="pResultado"></p>
+       <p>Ya estas registrado?</p>
+        <li id="btnSeccionIngresar" > 
+          <a> Ingresar</a>
+        </li>
+
+      </div>
+
+    </div>
+    <div id= "seleccionIngresar1">
+
+    <h1>Ingresar</h1>
+    <label for="txtBusquedaUSU"><b>Nombre de Usuario:</b></label>
+      <input type="text" placeholder="Ingresar Nombre de Usuario" id="txtBusquedaUSU">
+      <label for="txtBusquedaCONTRA"><b>Contraseña:</b></label>
+      <input type="password" placeholder="Ingresar Contraseña" name="psw1" id="txtBusquedaCONTRA" required>
+      <input type="button" value="Ingresar" id="btnIngresar1" class="button">
+
+
+    </div>
+    <p id="pResultado1"></p>
+    <div id="seleccionAppDocente">
+        <h1>Aplicacion docente</h1>
+        <p>Asignar nivel a alumnos</p>
+        <label for="txtNivelalumnos"><b>Nombre de alumno:</b></label>
+      <input type="text" placeholder="Ingresar Nombre " id="txtNivelalumnos">
+      <input type="button" value="Buscar" id="btnBuscar" class="button">
+      <p id="pResultadoNivel"></p>
+
+
+    </div>
+    <div id="seleccionAppAlumno">
+        <h1>Aplicacion Alumno</h1>
+        
+
+    </div>
+    <div id= "seleccionNivel">
+        <label for="slcNivel" required>Asignar nuevo nivel o mantener el actual:</label>
+        <select class="select" id="slcNivel" name="select">            
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+            </select>
+            <input type="button" value="Asignar nivel" id="btnAsignarNivel" class="button">
+      <p id="pResultadoNivelguardado"></p>
+
+         </div>
+
+    <script src="js/INTENTO3.js"></script>
+</body>
+
+</html>
